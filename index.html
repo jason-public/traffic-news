@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교통국 주요사업 현황</title>
+  <style>
+    /* PERPLEXITY DESIGN SYSTEM */
+    :root {
+      /* Primitive Color Tokens */
+      --color-white: rgba(255, 255, 255, 1);
+      --color-black: rgba(0, 0, 0, 1);
+      --color-cream-50: rgba(252, 252, 249, 1);
+      --color-cream-100: rgba(255, 255, 253, 1);
+      --color-gray-200: rgba(245, 245, 245, 1);
+      --color-gray-300: rgba(167, 169, 169, 1);
+      --color-gray-400: rgba(119, 124, 124, 1);
+      --color-slate-500: rgba(98, 108, 113, 1);
+      --color-brown-600: rgba(94, 82, 64, 1);
+      --color-charcoal-700: rgba(31, 33, 33, 1);
+      --color-charcoal-800: rgba(38, 40, 40, 1);
+      --color-slate-900: rgba(19, 52, 59, 1);
+      --color-teal-300: rgba(50, 184, 198, 1);
+      --color-teal-400: rgba(45, 166, 178, 1);
+      --color-teal-500: rgba(33, 128, 141, 1);
+      --color-teal-600: rgba(29, 116, 128, 1);
+      --color-teal-700: rgba(26, 104, 115, 1);
+      --color-teal-800: rgba(41, 150, 161, 1);
+      --color-red-400: rgba(255, 84, 89, 1);
+      --color-red-500: rgba(192, 21, 47, 1);
+      --color-orange-400: rgba(230, 129, 97, 1);
+      --color-orange-500: rgba(168, 75, 47, 1);
+
+      /* RGB versions for opacity control */
+      --color-brown-600-rgb: 94, 82, 64;
+      --color-teal-500-rgb: 33, 128, 141;
+      --color-slate-900-rgb: 19, 52, 59;
+      --color-slate-500-rgb: 98, 108, 113;
+      --color-red-500-rgb: 192, 21, 47;
+      --color-red-400-rgb: 255, 84, 89;
+      --color-orange-500-rgb: 168, 75, 47;
+      --color-orange-400-rgb: 230, 129, 97;
+
+      /* Background color tokens (Light Mode) */
+      --color-bg-1: rgba(59, 130, 246, 0.08);
+      --color-bg-2: rgba(245, 158, 11, 0.08);
+      --color-bg-3: rgba(34, 197, 94, 0.08);
+      --color-bg-4: rgba(239, 68, 68, 0.08);
+      --color-bg-5: rgba(147, 51, 234, 0.08);
+      --color-bg-6: rgba(249, 115, 22, 0.08);
+      --color-bg-7: rgba(236, 72, 153, 0.08);
+      --color-bg-8: rgba(6, 182, 212, 0.08);
+
+      /* Semantic Color Tokens (Light Mode) */
+      --color-background: var(--color-cream-50);
+      --color-surface: var(--color-cream-100);
+      --color-text: var(--color-slate-900);
+      --color-text-secondary: var(--color-slate-500);
+      --color-primary: var(--color-teal-500);
+      --color-primary-hover: var(--color-teal-600);
+      --color-primary-active: var(--color-teal-700);
+      --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+      --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+      --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+      --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+      --color-btn-primary-text: var(--color-cream-50);
+      --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+      --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+      --color-error: var(--color-red-500);
+      --color-success: var(--color-teal-500);
+      --color-warning: var(--color-orange-500);
+      --color-info: var(--color-slate-500);
+      --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+      --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+      /* Typography */
+      --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --font-size-xs: 11px;
+      --font-size-sm: 12px;
+      --font-size-base: 14px;
+      --font-size-md: 14px;
+      --font-size-lg: 16px;
+      --font-size-xl: 18px;
+      --font-size-2xl: 20px;
+      --font-size-3xl: 24px;
+      --font-size-4xl: 30px;
+      --font-weight-normal: 400;
+      --font-weight-medium: 500;
+      --font-weight-semibold: 550;
+      --font-weight-bold: 600;
+      --line-height-tight: 1.2;
+      --line-height-normal: 1.5;
+      --letter-spacing-tight: -0.01em;
+
+      /* Spacing */
+      --space-0: 0;
+      --space-1: 1px;
+      --space-2: 2px;
+      --space-4: 4px;
+      --space-6: 6px;
+      --space-8: 8px;
+      --space-10: 10px;
+      --space-12: 12px;
+      --space-16: 16px;
+      --space-20: 20px;
+      --space-24: 24px;
+      --space-32: 32px;
+
+      /* Border Radius */
+      --radius-sm: 6px;
+      --radius-base: 8px;
+      --radius-md: 10px;
+      --radius-lg: 12px;
+      --radius-full: 9999px;
+
+      /* Shadows */
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+      --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+      /* Animation */
+      --duration-fast: 150ms;
+      --duration-normal: 250ms;
+      --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-gray-400-rgb: 119, 124, 124;
+        --color-teal-300-rgb: 50, 184, 198;
+        --color-gray-300-rgb: 167, 169, 169;
+        --color-gray-200-rgb: 245, 245, 245;
+        --color-bg-1: rgba(29, 78, 216, 0.15);
+        --color-bg-2: rgba(180, 83, 9, 0.15);
+        --color-bg-3: rgba(21, 128, 61, 0.15);
+        --color-bg-4: rgba(185, 28, 28, 0.15);
+        --color-bg-5: rgba(107, 33, 168, 0.15);
+        --color-bg-6: rgba(194, 65, 12, 0.15);
+        --color-bg-7: rgba(190, 24, 93, 0.15);
+        --color-bg-8: rgba(8, 145, 178, 0.15);
+        --color-background: var(--color-charcoal-700);
+        --color-surface: var(--color-charcoal-800);
+        --color-text: var(--color-gray-200);
+        --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+        --color-primary: var(--color-teal-300);
+        --color-primary-hover: var(--color-teal-400);
+        --color-primary-active: var(--color-teal-800);
+        --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+        --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+        --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+        --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+        --color-error: var(--color-red-400);
+        --color-success: var(--color-teal-300);
+        --color-warning: var(--color-orange-400);
+        --color-info: var(--color-gray-300);
+        --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+        --color-btn-primary-text: var(--color-slate-900);
+        --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+        --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+        --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+        --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+        --color-success-rgb: var(--color-teal-300-rgb);
+        --color-error-rgb: var(--color-red-400-rgb);
+        --color-warning-rgb: var(--color-orange-400-rgb);
+        --color-info-rgb: var(--color-gray-300-rgb);
+      }
+    }
+
+    @font-face {
+      font-family: 'FKGroteskNeue';
+      src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: var(--font-size-base);
+      font-family: var(--font-family-base);
+      line-height: var(--line-height-normal);
+      color: var(--color-text);
+      background-color: var(--color-background);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Custom Styles for Newsletter Layout */
+    .page-wrapper {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Navigation - CUSTOMIZABLE: Update links and titles here */
+    .sidebar {
+      width: 280px;
+      background-color: var(--color-surface);
+      border-right: 1px solid var(--color-card-border);
+      padding: var(--space-24);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .sidebar-logo {
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-primary);
+      margin-bottom: var(--space-32);
+      letter-spacing: var(--letter-spacing-tight);
+    }
+
+    .sidebar-nav {
+      list-style: none;
+    }
+
+    .sidebar-nav li {
+      margin-bottom: var(--space-12);
+    }
+
+    .sidebar-nav a {
+      display: block;
+      padding: var(--space-8) var(--space-12);
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      border-radius: var(--radius-base);
+      font-size: var(--font-size-base);
+      transition: all var(--duration-fast) var(--ease-standard);
+    }
+
+    .sidebar-nav a:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-text);
+    }
+
+    .sidebar-nav a.active {
+      background-color: var(--color-bg-1);
+      color: var(--color-primary);
+      font-weight: var(--font-weight-medium);
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: var(--space-32);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Banner Section - CUSTOMIZABLE: Change title, subtitle, date, and summary */
+    .banner {
+      background: linear-gradient(135deg, var(--color-bg-1) 0%, var(--color-bg-3) 100%);
+      border-radius: var(--radius-lg);
+      padding: var(--space-32);
+      margin-bottom: var(--space-32);
+      border: 1px solid var(--color-card-border);
+    }
+
+    .banner-date {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-8);
+      font-weight: var(--font-weight-medium);
+    }
+
+    .banner-title {
+      font-size: var(--font-size-4xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-text);
+      margin-bottom: var(--space-12);
+      letter-spacing: var(--letter-spacing-tight);
+      line-height: var(--line-height-tight);
+    }
+
+    .banner-subtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-16);
+    }
+
+    .banner-summary {
+      font-size: var(--font-size-base);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    /* Core Points Grid - CUSTOMIZABLE: Add/remove points in HTML */
+    .core-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-16);
+      margin-bottom: var(--space-32);
+    }
+
+    .core-point-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-card-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-20);
+      transition: all var(--duration-normal) var(--ease-standard);
+      cursor: pointer;
+    }
+
+    .core-point-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
+    }
+
+    .core-point-title {
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text);
+      margin-bottom: var(--space-8);
+    }
+
+    .core-point-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Section Header */
+    .section {
+      margin-bottom: var(--space-32);
+    }
+
+    .section-header {
+      font-size: var(--font-size-3xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-text);
+      margin-bottom: var(--space-24);
+      padding-bottom: var(--space-12);
+      border-bottom: 2px solid var(--color-primary);
+    }
+
+    /* Stats Cards - CUSTOMIZABLE: Update stats in HTML */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-16);
+      margin-bottom: var(--space-32);
+    }
+
+    .stat-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-card-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-24);
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: var(--font-size-4xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-primary);
+      margin-bottom: var(--space-8);
+    }
+
+    .stat-label {
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text);
+      margin-bottom: var(--space-4);
+    }
+
+    .stat-note {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+
+    /* Trend Cards - CUSTOMIZABLE: Add/remove trends and content */
+    .trend-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-card-border);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-16);
+      overflow: hidden;
+      transition: all var(--duration-normal) var(--ease-standard);
+    }
+
+    .trend-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .trend-header {
+      padding: var(--space-20);
+      background-color: var(--color-bg-1);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .trend-title {
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text);
+    }
+
+    .trend-toggle {
+      font-size: var(--font-size-xl);
+      color: var(--color-primary);
+      transition: transform var(--duration-normal) var(--ease-standard);
+    }
+
+    .trend-toggle.expanded {
+      transform: rotate(180deg);
+    }
+
+    .trend-content {
+      padding: var(--space-20);
+      display: none;
+    }
+
+    .trend-content.expanded {
+      display: block;
+    }
+
+    .trend-content p {
+      font-size: var(--font-size-base);
+      color: var(--color-text);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* News Highlights - CUSTOMIZABLE: Add/edit news items */
+    .news-list {
+      list-style: none;
+    }
+
+    .news-item {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-card-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-20);
+      margin-bottom: var(--space-16);
+      transition: all var(--duration-normal) var(--ease-standard);
+      cursor: pointer;
+    }
+
+    .news-item:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
+    }
+
+    .news-title {
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text);
+      margin-bottom: var(--space-8);
+    }
+
+    .news-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    .news-meta {
+      display: flex;
+      gap: var(--space-12);
+      margin-top: var(--space-8);
+      font-size: var(--font-size-xs);
+      color: var(--color-text-secondary);
+    }
+
+    .news-category {
+      padding: var(--space-4) var(--space-8);
+      background-color: var(--color-bg-2);
+      border-radius: var(--radius-sm);
+      font-weight: var(--font-weight-medium);
+    }
+
+    /* Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--duration-normal) var(--ease-standard),
+                  visibility var(--duration-normal) var(--ease-standard);
+      padding: var(--space-16);
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      background-color: var(--color-surface);
+      border-radius: var(--radius-lg);
+      max-width: 700px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+      transform: scale(0.9) translateY(20px);
+      transition: transform var(--duration-normal) var(--ease-standard);
+    }
+
+    .modal-overlay.active .modal-content {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-header {
+      padding: var(--space-24);
+      border-bottom: 1px solid var(--color-card-border);
+      position: sticky;
+      top: 0;
+      background-color: var(--color-surface);
+      z-index: 10;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: var(--space-16);
+      right: var(--space-16);
+      width: 32px;
+      height: 32px;
+      border: none;
+      background-color: var(--color-secondary);
+      color: var(--color-text);
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-xl);
+      transition: all var(--duration-fast) var(--ease-standard);
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      background-color: var(--color-error);
+      color: var(--color-white);
+      transform: rotate(90deg);
+    }
+
+    .modal-title {
+      font-size: var(--font-size-3xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-text);
+      margin-bottom: var(--space-12);
+      padding-right: var(--space-32);
+      line-height: var(--line-height-tight);
+    }
+
+    .modal-meta {
+      display: flex;
+      gap: var(--space-16);
+      flex-wrap: wrap;
+    }
+
+    .modal-meta-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-6);
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+
+    .modal-category {
+      padding: var(--space-6) var(--space-12);
+      background-color: var(--color-bg-1);
+      color: var(--color-primary);
+      border-radius: var(--radius-full);
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-sm);
+    }
+
+    .modal-body {
+      padding: var(--space-24);
+    }
+
+    .modal-section {
+      margin-bottom: var(--space-24);
+    }
+
+    .modal-section-title {
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text);
+      margin-bottom: var(--space-12);
+      padding-bottom: var(--space-8);
+      border-bottom: 2px solid var(--color-primary);
+    }
+
+    .modal-description {
+      font-size: var(--font-size-base);
+      color: var(--color-text);
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .modal-description ul {
+      margin-top: var(--space-12);
+      padding-left: var(--space-20);
+    }
+
+    .modal-description li {
+      margin-bottom: var(--space-8);
+    }
+
+    /* Prevent body scroll when modal is open */
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    /* Footer - CUSTOMIZABLE: Update social links and footer text */
+    .footer {
+      margin-top: var(--space-32);
+      padding-top: var(--space-24);
+      border-top: 1px solid var(--color-card-border);
+      text-align: center;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-16);
+      margin-bottom: var(--space-16);
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: var(--color-secondary);
+      border-radius: var(--radius-full);
+      color: var(--color-text);
+      text-decoration: none;
+      transition: all var(--duration-fast) var(--ease-standard);
+    }
+
+    .social-link:hover {
+      background-color: var(--color-primary);
+      color: var(--color-btn-primary-text);
+    }
+
+    .footer-text {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-secondary);
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .page-wrapper {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid var(--color-card-border);
+      }
+
+      .main-content {
+        padding: var(--space-16);
+      }
+
+      .banner-title {
+        font-size: var(--font-size-3xl);
+      }
+
+      .core-points {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- SIDEBAR NAVIGATION - CUSTOMIZABLE -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">교통국</div>
+      <nav>
+        <ul class="sidebar-nav">
+          <!-- To customize: Change href to match section IDs, update text -->
+          <li><a href="#banner" class="active">홈</a></li>
+          <li><a href="#core-points">주요사업 현황</a></li>
+          <li><a href="#stats">통계 요약</a></li>
+          <li><a href="#trends">트렌드 분석</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- BANNER SECTION - CUSTOMIZABLE: Update title, date, summary -->
+      <section id="banner" class="banner">
+        <div class="banner-date">2025-11-11</div>
+        <h1 class="banner-title">교통국 주요사업 현황</h1>
+        <div class="banner-subtitle">[와부·조안] 구간별 추진 현황</div>
+        <p class="banner-summary">
+          남양주시 교통국이 추진 중인 주요사업들의 상세 현황 및 계획을 소개합니다.
+        </p>
+      </section>
+
+
+
+
+
+
+      <!-- 교통국 주요사업 현황 섹션 - CUSTOMIZABLE: Add/remove cards -->
+      <section id="core-points" class="section">
+        <h2 class="section-header">교통국 주요사업 현황</h2>
+        <div class="core-points">
+          <div class="core-point-card" onclick="openCorePointModal('tp1')">
+            <h3 class="core-point-title">수도권광역급행철도(GTX)사업추진</h3>
+            <p class="core-point-desc">GTX-D, E, F 노선 추진 | 윤석열 정부 110대 과제 | 지역: 와부읍, 양정동</p>
+          </div>
+          <div class="core-point-card" onclick="openCorePointModal('tp2')">
+            <h3 class="core-point-title">6호선 남양주 연장</h3>
+            <p class="core-point-desc">신내 차량기지 ~ 남양주시 | 추가검토사업 | 지역: 와부읍, 평내동, 호평동, 화도읍</p>
+          </div>
+          <div class="core-point-card" onclick="openCorePointModal('tp3')">
+            <h3 class="core-point-title">강릉선 KTX 남양주(덕소역) 정차</h3>
+            <p class="core-point-desc">운행 시작: 2022년 7월 31일 | 주말 4회 정차 | 지역: 와부읍</p>
+          </div>
+          <div class="core-point-card" onclick="openCorePointModal('tp4')">
+            <h3 class="core-point-title">경의중앙선 팔당역 회차</h3>
+            <p class="core-point-desc">회차 구간 연장 추진 | 현재 111회 운행 | 지역: 와부읍</p>
+          </div>
+          <div class="core-point-card" onclick="openCorePointModal('tp5')">
+            <h3 class="core-point-title">와부읍 팔당2리 공영주차장 조성</h3>
+            <p class="core-point-desc">예산 2,995백만원 | 주차대수 42대 | 지역: 와부읍</p>
+          </div>
+          <div class="core-point-card" onclick="openCorePointModal('tp6')">
+            <h3 class="core-point-title">국도45호선(팔당대교~와부) 도로개설공사</h3>
+            <p class="core-point-desc">예산 1,104.77억원 | 공정률 78% | 2026년 8월 준공 | 지역: 와부읍</p>
+          </div>
+          <div class="core-point-card" onclick="openCorePointModal('tp7')">
+            <h3 class="core-point-title">국지도86호선(와부~화도) 도로개설공사(와부~창현)</h3>
+            <p class="core-point-desc">예산 1,703억원 | 2025년 12월 계획 고시 | 지역: 와부읍</p>
+          </div>
+          <div class="core-point-card" onclick="openCorePointModal('tp8')">
+            <h3 class="core-point-title">시도13호선(월문교 교차로) 개선사업</h3>
+            <p class="core-point-desc">예산 26억원 | 회전교차로 1식 | 준공 완료 | 지역: 와부읍</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!-- 주요 통계 섹션 - CUSTOMIZABLE: Update numbers and labels -->
+      <section id="stats" class="section">
+        <h2 class="section-header">주요 통계</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">8개</div>
+            <div class="stat-label">총 사업수</div>
+            <div class="stat-note">와부·조안 지역</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">약 4,900억원</div>
+            <div class="stat-label">총 투자 규모</div>
+            <div class="stat-note">예산 확보된 사업 기준</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">4개</div>
+            <div class="stat-label">철도 사업</div>
+            <div class="stat-note">GTX, 6호선, KTX, 경의중앙선</div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!--트렌드 섹션 - CUSTOMIZABLE: Add/remove trend cards -->
+      <section id="trends" class="section">
+        <h2 class="section-header">트렌드 상세 분석</h2>
+        <!-- To customize: Copy/paste trend-card structure, update title and content -->
+        <div class="trend-card">
+          <div class="trend-header" onclick="toggleTrend(this)">
+            <h3 class="trend-title">검색 패러다임 변화: GEO 부상</h3>
+            <span class="trend-toggle">▼</span>
+          </div>
+          <div class="trend-content">
+            <p>AI 챗봇 확산으로 SEO 트래픽 감소 전망, GEO(Generative Engine Optimization)가 새로운 마케팅 전략으로 부상. 클릭률(CTR) 중심에서 AI 인용률과 신뢰 컨텐츠 구조가 중요.</p>
+          </div>
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-header" onclick="toggleTrend(this)">
+            <h3 class="trend-title">AI 개발 효율성 극대화</h3>
+            <span class="trend-toggle">▼</span>
+          </div>
+          <div class="trend-content">
+            <p>Cursor Composer로 코드 생성이 기존 대비 4배 빨라지고, Nvidia NVFP4는 학습 비용을 절감. 실무환경 혁신 및 비용/속도 동시 개선.</p>
+          </div>
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-header" onclick="toggleTrend(this)">
+            <h3 class="trend-title">AI 인프라 및 에너지 비용</h3>
+            <span class="trend-toggle">▼</span>
+          </div>
+          <div class="trend-content">
+            <p>OpenAI 스타게이트 8GW 확장, 데이터센터 및 에너지 수요와 비용 이슈 부상. 재생에너지 및 효율적 인프라 기술이 핵심.</p>
+          </div>
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-header" onclick="toggleTrend(this)">
+            <h3 class="trend-title">대기업 AI 투자와 제품화 리스크</h3>
+            <span class="trend-toggle">▼</span>
+          </div>
+          <div class="trend-content">
+            <p>메타 등 빅테크의 AI 투자 대비 수익화 속도가 늦어져 투자 회수 압박. 제품 전략 재점검 요구.</p>
+          </div>
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-header" onclick="toggleTrend(this)">
+            <h3 class="trend-title">AI 안전성·해석가능성·보안 이슈</h3>
+            <span class="trend-toggle">▼</span>
+          </div>
+          <div class="trend-content">
+            <p>OpenAI, Meta, Anthropic의 LLM 모더레이션, 해석가능성, 자가 검증 및 실시간 오류 수정 기술 주목. 에이전트 보안 및 글로벌 AI 규범 다변화.</p>
+          </div>
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-header" onclick="toggleTrend(this)">
+            <h3 class="trend-title">글로벌 AI 거버넌스와 정책 변화</h3>
+            <span class="trend-toggle">▼</span>
+          </div>
+          <div class="trend-content">
+            <p>중국 WAICO 등 세계 AI 협력/규제 경쟁 격화, 글로벌 스탠다드와 데이터 거버넌스 이슈 부상.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 주요 뉴스 섹션 - CUSTOMIZABLE: Add/edit news items -->
+      <section id="news" class="section">
+        <h2 class="section-header">주요 뉴스 하이라이트</h2>
+        <ul class="news-list">
+          <!-- To customize: Copy/paste news-item, update title and desc -->
+          <li class="news-item" onclick="openModal('1')">
+            <h3 class="news-title">Geostar, GEO 전략 제시</h3>
+            <p class="news-desc">SEO 25% 감소, GEO 중심 사이트 구조 최적화 부상</p>
+            <div class="news-meta">
+              <span class="news-category">검색·마케팅</span>
+              <span>2025-10-27</span>
+            </div>
+          </li>
+          <li class="news-item" onclick="openModal('2')">
+            <h3 class="news-title">Perplexity, Getty Images 라이선스 체결</h3>
+            <p class="news-desc">AI 이미지 및 저작권 라이선스 문제 사례, 합법적 해결</p>
+            <div class="news-meta">
+              <span class="news-category">저작권·규제</span>
+              <span>2025-10-28</span>
+            </div>
+          </li>
+          <li class="news-item" onclick="openModal('3')">
+            <h3 class="news-title">OpenAI Aardvark 에이전트형 보안 연구자 발표</h3>
+            <p class="news-desc">취약점 자동탐지/검증/수정 에이전트 워크플로우 공개</p>
+            <div class="news-meta">
+              <span class="news-category">보안·AI 에이전트</span>
+              <span>2025-10-29</span>
+            </div>
+          </li>
+          <li class="news-item" onclick="openModal('4')">
+            <h3 class="news-title">구글 믹스보드, 한국 서비스 확대</h3>
+            <p class="news-desc">AI 기반 협업 도구, 콘텐츠 초안 자동 생성, 워크플로우 혁신</p>
+            <div class="news-meta">
+              <span class="news-category">도구·생산성</span>
+              <span>2025-10-30</span>
+            </div>
+          </li>
+          <li class="news-item" onclick="openModal('5')">
+            <h3 class="news-title">MS, AI 인력 재조정 전략</h3>
+            <p class="news-desc">AI 전환에 맞춘 인력 전략, 생산성 강화</p>
+            <div class="news-meta">
+              <span class="news-category">정책·조직</span>
+              <span>2025-10-31</span>
+            </div>
+          </li>
+          <li class="news-item" onclick="openModal('6')">
+            <h3 class="news-title">엔비디아 5조 달러 시총 달성</h3>
+            <p class="news-desc">AI 시장 과열 신호, 조정 가능성 우려 제기</p>
+            <div class="news-meta">
+              <span class="news-category">시장·투자</span>
+              <span>2025-10-31</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <!-- 푸터 섹션 - CUSTOMIZABLE: Update social links and text -->
+      <footer class="footer">
+        <div class="social-links">
+          <!-- To customize: Update href links to your social profiles -->
+          <a href="#" class="social-link" target="_blank" title="Share on Twitter">𝕏</a>
+          <a href="#" class="social-link" target="_blank" title="Share on Facebook">f</a>
+          <a href="#" class="social-link" target="_blank" title="Share on LinkedIn">in</a>
+          <a href="#" class="social-link" target="_blank" title="Copy Link">🔗</a>
+        </div>
+        <p class="footer-text">
+          © 2025 남양주시 교통국. 주요사업 현황 정보.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+
+
+
+
+
+  <!-- 멀티모달 섹션 -->
+  <div id="modal" class="modal-overlay" onclick="closeModalOnOverlay(event)">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeModal()" aria-label="Close modal">×</button>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <div class="modal-meta">
+          <span class="modal-category" id="modal-category"></span>
+          <div class="modal-meta-item">
+            <span>📅</span>
+            <span id="modal-date"></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3 class="modal-section-title">상세 내용</h3>
+          <div class="modal-description" id="modal-description"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JAVASCRIPT FOR INTERACTIVE FEATURES
+
+    // Transportation projects data for modal
+    const corePointsData = {
+      'tp1': {
+        title: '수도권광역급행철도 (GTX)사업추진',
+        category: '철도',
+        description: `【 사업명 】수도권광역급행철도 (GTX)사업추진
+      
+【 개요 】
+• GTX D․E․F 노선 신설 추진 등
+• GTX-D : 팔당 연결
+• GTX-E : 덕소 연결
+• GTX-F : 남양주 경유
+      
+【 추진현황 및 계획 】
+• 2023년 2월 : GTX-D노선 와부 연결 건의 (대광위)
+• 2023년 9월 : 국토교통부 장관 초청 간담회 (국토교통부 ⇔ 남양주시)
+      
+【 지역 】 와부읍, 양정동`
+
+      },
+      'tp2': {
+        title: '6호선 남양주 연장',
+        category: '철도',
+        description: `【 사업명 】 6호선 남양주 연장
+      
+【 개요 】
+• 신내 차량기지 ~ 남양주시 연장
+• 노선구상(안): 신내차량기지 이전 전제 검토 필요
+• 종점 및 사업비 명시되지 않음
+      
+【 추진현황 및 계획 】
+• 2021년 7월: 제4차 국가철도망, 제4차 대도시권광역교통계획 반영 ⇒ "추가검토사업"으로 명시
+• 2023년 9월: 철도망 연구용역 착수 (市)
+• 2024년 11월: 제5차 대도시권 광역교통 시행계획 사업건의
+      
+【 지역 】 와부읍, 평내동, 호평동, 화도읍`
+      },
+      'tp3': {
+        title: '강릉선 KTX 남양주(덕소역) 정차',
+        category: '철도',
+        description: `【 사업명 】 강릉선 KTX 남양주(덕소역) 정차
+      
+【 개요 】
+• 운행시작일: 2022년 7월 31일
+• 운행현황: 주말(금, 토, 일) 4회 정차
+      
+【 추진현황 및 계획 】
+• 2017년 1월: KTX 정차 정책건의 계속
+• 2022년 2월: 방문 건의 (코레일)
+• 2022년 7월 31일: 덕소역 운행 시작
+• 현재: 평일 정차 및 주말 운행 횟수 확대를 위한 정책건의 계속
+      
+【 지역 】 와부읍`
+      },
+      'tp4': {
+        title: '경의중앙선 팔당역 회차',
+        category: '철도',
+        description: `【 사업명 】 경의중앙선 팔당역 회차
+      
+【 개요 】
+• 요청사항: 회차 구간 연장(팔당행 증회)건의 (덕소 → 팔당)
+• 운행 횟수 추이:
+  - 2017년 2월 이전: 102회
+  - 2017년 2월 ~ 2023년 3월: 108회
+  - 2023년 3월 ~: 111회
+      
+【 추진현황 및 계획 】
+• 운행 횟수 확대를 위한 정책건의 계속
+• 철도망 연구용역 착수 (市, 2023년 9월) ⇒ 기술적, 경제적 검토 추진
+      
+【 지역 】 와부읍`
+      },
+      'tp5': {
+        title: '와부읍 팔당2리 공영주차장 조성',
+        category: '주차장',
+        description: `【 사업명 】 와부읍 팔당2리 공영주차장 조성
+      
+【 개요 】
+• 예산: 2,995백만원
+• 주차대수: 42대
+• 공사 기간: 2025년 07월 ~ 2025년 12월
+      
+【 추진현황 및 계획 】
+• 2023년 11월: 보상 완료
+• 2025년 07월: 실시설계용역 착수 예정
+• 2025년 08월: 실시설계용역 완료 예정
+• 2025년 09월: 공사 착공 예정
+• 2025년 12월: 공사 준공 예정
+      
+【 지역 】 와부읍`
+      },
+      'tp6': {
+        title: '국도45호선(팔당대교~와부) 도로개설공사',
+        category: '도로',
+        description: `【 사업명 】 국도45호선(팔당대교~와부) 도로개설공사
+      
+【 개요 】
+• 예산: 1,104.77억원
+• 규모: L=5.1㎎, B=27~30.5m
+• 공사 기간: 2014년 06월 ~ 2026년 08월
+• 공정률: 78%
+      
+【 추진현황 및 계획 】
+• 2014년 06월 24일: 실시설계용역 착수
+• 2016년 08월 26일: 제4차 국도·국지도 5개년 계획 반영
+• 2017년 12월 07일: 실시설계 용역 완료
+• 2019년 10월 07일: 공사 착공
+• 2020년 01월 22일: 보상계획공고 후 보상협의 진행 중
+• 2022년 01월: 국도6호선 보상(80%), 22년본예산 84.17억 확보
+• 2022년 03월 23일: 가도공사 완료
+• 2022년 06월: 국도6호선 우선시공 건의
+• 2022년 07월 25일~: 국도6호선 신팔당대교 램프교 교각설치, 신팔당대교 본선 파일기초 시공
+• 2023년 06월: 국도6호선 시공예정
+• 2025년 03월: 국도6호선 양평방향 마이크로 파일 시공구간 토공작업 및 교량 상부 슬라브 시공
+• 2026년 08월: 공사 준공(예정)
+      
+【 지역 】 와부읍`
+      },
+      'tp7': {
+        title: '국지도86호선(와부~화도) 도로개설공사(와부~창현)',
+        category: '도로',
+        description: `【 사업명 】 국지도86호선(와부~화도) 도로개설공사(와부~창현)
+      
+【 개요 】
+• 예산: 1,703억원
+• 규모: L=8.68㎎, B=10.5m
+• 공사 기간: 2017년 01월 ~ 2025년 12월
+      
+【 추진현황 및 계획 】
+• 2017년 12월: 제5차 국도·국지도건설 5개년 계획 수립 수요조사 및 건의노선 제출
+• 2021년 09월 29일: 제5차 국도·국지도건설 5개년계획 고시(미반영)
+• 2023년 03월 15일: 제6차 수요조사시 건의노선 제출
+• 2024년 05월 02일: 해당구간 반영을 위한 전략용역 착수
+• 2025년 12월: 제6차 국도·국지도 5개년 계획 고시
+      
+【 지역 】 와부읍`
+      },
+      'tp8': {
+        title: '시도13호선(월문교 교차로) 개선사업',
+        category: '교차로',
+        description: `【 사업명 】 시도13호선(월문교 교차로) 개선사업
+      
+【 개요 】
+• 예산: 26억원
+• 사업 내용: 회전교차로 1식
+• 공사 기간: 2021년 02월 ~ 2024년 04월
+• 공정률: 100% (준공 완료)
+      
+【 추진현황 및 계획 】
+• 2021년 05월 20일: 실시설계용역 착수
+• 2021년 08월 31일: 관련부서 사전협의
+• 2022년 01월: 본예산(공사비 24억원) 확보
+• 2022년 04월 05일: 개발제한구역 미반영시설 협의자료 제출
+• 2022년 07월 11일: 신월문교 특허공법선정 공고
+• 2022년 10월 12일: 계약심사
+• 2022년 10월 18일: 기술자문위원회 요청
+• 2023년 02월 20일: 공사 착공
+• 2023년 08월 17일: 교대 슬라브 타설완료
+• 2023년 09월 30일: 우수관 시공완료
+• 2023년 10월 14일: 신축이음장치 설치
+• 2024년 04월 09일: 공사 준공
+      
+【 지역 】 와부읍`
+      }
+    };
+
+
+
+
+
+
+    // 주요뉴스 하이라이트 섹션 News data removed - not used in transportation website
+    const newsData = {
+      '1': {
+        title: 'Geostar, GEO 전략 제시',
+        category: '검색·마케팅',
+        date: '2025-10-27',
+        description: `Geostar가 AI 기반 검색 시대에 맞춘 'Generative Engine Optimization(GEO)' 서비스를 제시했습니다. Gartner는 전통적 검색 트래픽이 2026년까지 25% 감소할 것이라 전망했으며, GEO는 LLM이 웹을 파싱·요약하는 방식을 고려해 사이트 구조·스키마·콘텐츠를 최적화하는 새로운 접근입니다. GEO는 기존의 SEO 전략(클릭 유도)을 넘어, AI에게 가장 신뢰받는 인용 출처가 되는 것을 목표로 합니다.
+
+핵심 포인트:
+• GEO는 LLM이 웹을 파싱·요약하는 방식을 고려한 최적화
+• 브랜드 멘션과 문맥적 인용이 AI 추천에 더 큰 영향력
+• Geostar의 에이전트로 자동 콘텐츠·기술 설정 지속 최적화`
+      },
+      '2': {
+        title: 'Perplexity, Getty Images 라이선스 체결',
+        category: '저작권·규제',
+        date: '2025-10-28',
+        description: `Perplexity가 Getty Images와 다년간 라이선스 계약을 체결해 과거 사진 사용 논란을 정리하고 합법화했습니다. 이미지 라이선스 합의는 AI 서비스와 창작자 권리 문제에서 중요한 선례로 평가되며, AI 기업들이 콘텐츠 사용에 대한 법적 기반을 마련하는 추세를 보여줍니다.
+
+핵심 의미:
+• Perplexity의 Getty Images 라이선스 계약은 AI 기업의 콘텐츠 사용 법적 기반 마련
+• 창작자 권리 보호와 AI 서비스 발전 사이의 균형점 제시
+• 향후 AI 기업들의 콘텐츠 라이선스 전략에 영향`
+      },
+      '3': {
+        title: 'OpenAI Aardvark 에이전트형 보안 연구자 발표',
+        category: '보안·AI 에이전트',
+        date: '2025-10-29',
+        description: `OpenAI가 자동으로 취약점을 찾아 검증·수정 제안까지 하는 에이전트형 보안 연구자 'Aardvark'를 발표했습니다. 소스코드·의존성 스캔, 취약점 검증, 패치 제안까지 자동화하는 에이전트형 보안 연구자로, 현재 프라이빗 베타 중입니다.
+
+주요 특징:
+• 소스코드·의존성 스캔에서 취약점 검증, 패치 제안까지 자동화
+• 프라이빗 베타로 제공되며 보안팀 부담 경감
+• 에이전트 신뢰성, 오탐 제어, 감사 로그가 핵심 운영 요구사항`
+      },
+      '4': {
+        title: '구글 믹스보드, 한국 서비스 확대',
+        category: '도구·생산성',
+        date: '2025-10-30',
+        description: `구글이 AI 기반 협업 도구 '믹스보드'를 한국을 포함해 180개국으로 확장했습니다. 사용자는 이미지·텍스트 기반의 보드에서 AI 제안·브레인스토밍·콘텐츠 초안을 자동 생성받을 수 있으며, 기업 내부 기획·마케팅 툴과의 연동 가능성이 열려 있습니다.
+
+한국 출시의 의미:
+• 한국 마케터·콘텐츠팀의 실무 도입 장벽이 낮아져 빠른 채택 예상
+• 멀티모달 입력 기반 생성 모델과 협업 UI 결합으로 실시간 제안·편집 가능
+• 내부 워크플로우 자동화, 캠페인 초안 생성에 즉시 적용 가능`
+      },
+      '5': {
+        title: 'MS, AI 인력 재조정 전략',
+        category: '정책·조직',
+        date: '2025-10-31',
+        description: `사티아 나델라 MS CEO가 AI 전환에 따라 인력을 다시 늘리겠다고 밝혔습니다. 과거 방식과는 다른 '조정'이라고 설명하며, AI로 생산성 향상을 노린 인력 전략 전환을 강조했습니다.
+
+전략적 시사점:
+• AI 기반 생산성 향상으로 인력 구조 재편, 단순 감축이 아닌 역할 전환 강조
+• 대기업의 인력정책 변화는 채용·사내 도구 도입 트렌드에 영향
+• AI 도구 도입으로 업무 방식 변화, 새로운 역할 창출 가능성 시사`
+      },
+      '6': {
+        title: '엔비디아 5조 달러 시총 달성',
+        category: '시장·투자',
+        date: '2025-10-31',
+        description: `Mint는 엔비디아의 시가총액 급등이 AI 겨울 가능성을 암시하는지 설명하며, 하드웨어 중심의 과열과 기술·수요 사이의 균형 문제를 분석했습니다. 칩 공급 과잉과 실제 수익성 간의 괴리가 시장 조정을 유발할 수 있다는 우려를 제시했습니다.
+
+시장 우려 사항:
+• 엔비디아 시가총액 5조 달러 달성이 AI 시장의 과열 신호일 가능성
+• 칩 공급 과잉과 실제 AI 애플리케이션 수익성 간의 괴리 우려
+• 시장 조정 가능성과 AI 겨울 시나리오에 대한 경고`
+      }
+    };
+
+
+
+
+
+    // Open modal with core point details
+    function openCorePointModal(pointId) {
+      const point = corePointsData[pointId];
+      if (!point) return;
+
+      document.getElementById('modal-title').textContent = point.title;
+      document.getElementById('modal-category').textContent = point.category;
+      document.getElementById('modal-date').textContent = '교통국 주요사업';
+      document.getElementById('modal-description').textContent = point.description;
+
+      const modal = document.getElementById('modal');
+      modal.classList.add('active');
+      document.body.classList.add('modal-open');
+    }
+
+    // Open modal with news details
+    function openModal(newsId) {
+      const news = newsData[newsId];
+      if (!news) return;
+
+      document.getElementById('modal-title').textContent = news.title;
+      document.getElementById('modal-category').textContent = news.category;
+      document.getElementById('modal-date').textContent = news.date;
+      document.getElementById('modal-description').textContent = news.description;
+
+      const modal = document.getElementById('modal');
+      modal.classList.add('active');
+      document.body.classList.add('modal-open');
+    }
+
+    // Close modal
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
+
+    // Close modal when clicking on overlay
+    function closeModalOnOverlay(event) {
+      if (event.target.id === 'modal') {
+        closeModal();
+      }
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // JAVASCRIPT FOR INTERACTIVE FEATURES
+
+    // Toggle trend card expansion
+    function toggleTrend(headerElement) {
+      const card = headerElement.parentElement;
+      const content = card.querySelector('.trend-content');
+      const toggle = headerElement.querySelector('.trend-toggle');
+      
+      content.classList.toggle('expanded');
+      toggle.classList.toggle('expanded');
+    }
+
+    // Active navigation highlighting based on scroll position
+    function updateActiveNav() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.sidebar-nav a');
+      
+      let currentSection = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= (sectionTop - 100)) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Update active nav on scroll
+    window.addEventListener('scroll', updateActiveNav);
+    
+    // Initial call
+    updateActiveNav();
+
+    // CUSTOMIZATION GUIDE IN CONSOLE
+    console.log(`
+    ╔═══════════════════════════════════════════════════════════╗
+    ║  AI 뉴스 웹사이트 커스터마이징 가이드                        ║
+    ╠═══════════════════════════════════════════════════════════╣
+    ║  1. 배너 수정: #banner 섹션의 제목, 날짜, 요약 변경          ║
+    ║  2. 핵심 포인트: .core-point-card 블록 추가/삭제             ║
+    ║  3. 통계: .stat-card의 숫자와 라벨 변경                      ║
+    ║  4. 트렌드: .trend-card 추가/삭제 및 내용 수정               ║
+    ║  5. 뉴스: .news-item 리스트 아이템 추가/수정                 ║
+    ║  6. 사이드바: .sidebar-nav의 링크와 텍스트 변경              ║
+    ║  7. 푸터: 소셜 링크 href 속성 업데이트                       ║
+    ║                                                             ║
+    ║  모든 섹션에 "CUSTOMIZABLE" 주석이 표시되어 있습니다.        ║
+    ╚═══════════════════════════════════════════════════════════╝
+    `);
+  </script>
+</body>
+</html>
